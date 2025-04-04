@@ -294,6 +294,8 @@ main {
     max-width: 500px;
     margin-bottom: 2rem;
     color: #d0d0d0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .buttons button {
@@ -332,6 +334,8 @@ main {
     padding: 2rem;
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .secondsection {
@@ -544,5 +548,92 @@ main hr {
 
     .rightsection img {
         margin-top: 2rem;
+    }
+}
+
+/* new section added  */
+.project-section {
+    padding: 5rem 5%;
+}
+
+.project-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #8a4af3;
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-box img {
+    height: 100px;
+    width: auto;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.project-text p {
+    color: #d0d0d0;
+    margin-bottom: 1.5rem;
+}
+
+.project-text a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #8a4af3;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.project-text a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.project-text a img {
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Make projects responsive */
+@media (max-width: 768px) {
+    .project-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .project-box img {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-text a {
+        justify-content: center;
     }
 }
