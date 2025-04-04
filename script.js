@@ -1,4 +1,4 @@
-// Typed.js initialization
+
 var typed = new Typed('#element', {
     strings: ['& Efficient C++ Programmer', 'Python Developer', 'Web Enthusiast'],
     typeSpeed: 90,
@@ -6,7 +6,7 @@ var typed = new Typed('#element', {
     loop: true
 });
 
-// Navbar scroll effect
+
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact form submission
+
 function submitForm() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -32,7 +32,6 @@ function submitForm() {
     }
 }
 
-// Scroll to top function
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -41,5 +40,5 @@ function scrollToTop() {
             setTimeout(function() {
                 document.querySelector('.loading-screen').style.display = 'none';
                 document.querySelector('.display-none').style.display = 'block';
-            }, 6000); // Redirect after 4 seconds
+            }, 4000); 
         }
