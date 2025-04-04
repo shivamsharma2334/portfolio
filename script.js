@@ -36,3 +36,10 @@ function submitForm() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+ window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.loading-screen').style.display = 'none';
+                document.querySelector('.display-none').style.display = 'block';
+            }, 6000); // Redirect after 4 seconds
+        }
